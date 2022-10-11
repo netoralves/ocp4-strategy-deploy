@@ -12,6 +12,8 @@ fi
 cd /tmp
 
 echo 'Downloading SQL script that initializes the database...'
+curl -s -O https://raw.githubusercontent.com/netoralves/ocp4-strategy-deploy/master/users.sql
+
 
 echo "Trying $HOOK_RETRIES times, sleeping $HOOK_SLEEP sec between tries:"
 while [ "$HOOK_RETRIES" != 0 ]; do
