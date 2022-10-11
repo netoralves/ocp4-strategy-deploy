@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# fixed
-HOOK_RETRIES=5
-
 # get timer and retries from env
 if [ "$HOOK_RETRIES" = "" ]; then
   HOOK_RETRIES=0
